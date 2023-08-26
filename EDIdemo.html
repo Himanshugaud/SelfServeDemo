@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Welcome to Your Website Name</title>
+    <style>
+        a {
+            text-decoration: none;
+            transition: color 0.3s ease
+        }
+        a:hover{
+                color: #3a24e7;
+        }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+        .sections-container {
+            width: 300%;
+            height: 100vh;
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+        .section {
+            width: 33.33%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: #f7f7f7;
+        }
+        .section:nth-child(even) {
+            background-color: #fff;
+        }
+        .section-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .section1-content {
+            display:flex;
+            position: relative;
+            height: 100vh;
+            width: 100%;
+            text-align: center;
+            background-color: rgb(255, 255, 255);
+            flex-direction: column;
+            align-items: left;
+            padding: 0px;
+            margin-top: 0px;
+            color:#f7f5f5;
+        }
+        .section1-container {
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            font-size: 150%;
+            color: #0a0a0a;
+            background-color: rgb(255, 255, 255);
+            height: 100%;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 1vw;
+        }
+        .section1-container-video {
+            display: flex;
+            flex-direction:column;
+            width:70%;
+            height: 85%;
+            background-color: rgb(255, 255, 255);            
+            margin:10px;
+            border: 0px solid #000000;
+            box-sizing: border-box;    
+            justify-content: center;      
+                      
+        }
+        .section1-container-text {
+            display: flex;
+            flex-direction:column;
+            width:70%;
+            height: 82%;
+            background-color: rgb(255, 255, 255);
+            padding: 1.2vw;
+            justify-content: left;
+            align-items: left;
+            text-align: left;
+            
+        }
+        .section1-container-text-description {
+            height: 95%;            
+        }
+        .section1-title {
+            display: flex;
+            position: relative;
+            font-size: 250%;
+            font-weight: bold;
+            color: #ffffff;
+            background-color: rgb(18, 116, 236);
+            height: 25px;
+            width: 100%;
+            padding: 2%;            
+            padding-left: 5%;
+            justify-content: space-between;
+            align-items: center;
+            text-align: left;
+        }
+        .section1-title-line {
+            position: relative;
+            background-color: rgb(12, 12, 12);
+            height: 5px;
+            width: 33%;
+            margin: 0%;
+            
+        }
+        .navigation-buttons {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: right;
+        }
+        .section1-buttons{
+            display: flex;
+            flex-direction: row;
+            width:95%;            
+            justify-content: space-between;
+            align-items: right;
+            text-align: center;
+        }
+        .Points {
+            font-size: smaller;            
+            color: #00010a;
+            text-decoration: none;
+            text-decoration-line: none;
+            
+        }
+        .next-button {
+            padding: 10px 10px;            
+            background-color: #2036f7;
+            color: #fff;
+            width: 20%;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 0 0px;
+            font-weight: bold;
+            transition: background-color 0.3s ease
+        }
+        .next-button:hover {
+            background-color: #4aa5de; /* Changing color on hover */
+        }
+        .back-button {
+            padding: 10px 10px;            
+            
+            color: #2036f7;
+            width: 20%;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 0;
+            font-weight: bold;
+            transition: background-color 0.3s ease
+        }
+        .back-button:hover {
+            background-color: #4aa5de; /* Changing color on hover */
+        }
+        .home-button {
+            display: flex;
+            align-items: flex-end;
+            color: #ffffff;
+            justify-content: right;
+            width: 20%;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 0;
+            font-size: 1.7rem;
+            font-weight: bold;
+            transition: color 0.3s ease
+
+        }
+        .home-button:hover {
+            color: #000000; /* Changing color on hover */
+        }
+        
+        
+        
+    </style>
+</head>
+<body>
+    <div class="sections-container">
+        <section id="section1" class="section">
+            <div class="section1-content">
+
+                <div class="section1-title">                    
+                    EDI Integration-1 
+                    <a href="!DOCTYPE.html#section3" class="home-button">Home<i class="material-icons w3-xxlarge">home</i></a>
+                </div> 
+                <div class="section1-title-line">                  
+                </div>
+                <div class="section1-container">
+                    <div class="section1-container-video">
+                        <video autoplay unmuted controls class="video video1">
+                            <source src="assets/EDI_onboarding.mp4" type="video/mp4"> <!-- Your video file -->
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="section1-container-text">
+                        <div class="section1-container-text-description">
+                            <h1>EDI Onboarding</h1>   
+                            <h4>Self-Serve helps partners to: </h4>                           
+                            <div class="Points">                            
+                            <ul style ="justify-content:space-around;display: flex; flex-direction:column;align-items: flex-start;">
+                                <li style ="margin:10px 0px 10px 0px"><a href="#" class="timestamp" data-timestamp="0" data-video="video1">Create Profile with contact details</a></li>
+                                <li style ="margin:10px 0px 10px 0px"><a href="#" class="timestamp" data-timestamp="40" data-video="video1">Provide Gatway, AS2 and EDI details</a></li>
+                                <li style ="margin:10px 0px 10px 0px"><a href="#" class="timestamp" data-timestamp="80" data-video="video1">Provide Program, Transaction details</a></li>
+                                <li style ="margin:10px 0px 10px 0px"><a href="#" class="timestamp" data-timestamp="110" data-video="video1">Review and Submit</a></li> 
+                              </ul>
+                            </div>
+                        </div>
+
+                        <div class="section1-buttons">
+                            <a href="!DOCTYPE.html#section3" class="back-button" data-video="video1" >Back</a>
+                            <a href="#section2" class="next-button"data-video="video1">Next</a>                            
+                        </div>
+                    </div>
+                    
+                </div>                
+            </div>
+        </section>
+
+        <section id="section2" class="section">
+            <div class="section1-content">
+
+                <div class="section1-title">
+                    EDI Integration
+                    <a href="!DOCTYPE.html#section3" class="home-button">Home<i class="material-icons w3-xxlarge">home</i></a>
+                </div> 
+                <div class="section1-title-line">                  
+                </div>
+                <div class="section1-container">
+                    <div class="section1-container-video">
+                        <video autoplay unmuted controls class="video video2">
+                            <source src="assets/ApprovalExperience.mp4"  type="video/mp4"> <!-- Your video file -->
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="section1-container-text">
+                        <div class="section1-container-text-description">
+                            <h1>Approval Experience</h1>   
+                            <h4>Self-Serve helps to manage the change management with: </h4>                           
+                            <div class="Points">                            
+                            <ul style ="justify-content:space-around;display: flex; flex-direction:column;align-items: flex-start;">
+                                <li style ="margin:10px 0px 10px 0px"><a href="#" class="timestamp" data-timestamp="0" data-video="video2">Partner status update on their request via emails and self serve screen</a></li>
+                                <li style ="margin:10px 0px 10px 0px"><a href="#" class="timestamp" data-timestamp="9" data-video="video2">Service Owner Approval / Reject feature with email communication of new requets</a></li>
+                                <li style ="margin:10px 0px 10px 0px"><a href="#" class="timestamp" data-timestamp="27" data-video="video2">Integration DRI on provisioning the changes by a click of a button</a></li>
+                                
+                              </ul>
+                            </div>
+                        </div>
+
+                        <div class="section1-buttons">
+                            <a href="#section1" class="back-button" data-video="video1" >Back</a>
+                            <a href="#section3" class="next-button"data-video="video1">Next</a>                            
+                        </div>
+                    </div>
+                    
+                </div>                
+            </div>
+        </section>
+        <section id="section3" class="section">
+            <div class="section1-content">
+
+                <div class="section1-title">
+                    EDI Integration
+                    <a href="!DOCTYPE.html#section3" class="home-button">Home</a>
+                </div> 
+                <div class="section1-title-line">                  
+                </div>
+                <div class="section1-container">
+                    <div class="section1-container-video">
+                        <video autoplay muted controls>
+                            <source src="assets/EDI_onboarding3.mp4" type="video/mp4"> <!-- Your video file -->
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="section1-container-text">
+                        <div class="section1-container-text-description">
+                            <h2>EDI Integration</h2>
+                            About EDI Integration <br>
+                            Step3.                           
+                        </div>
+
+                        <div class="section1-buttons">
+                            <a href="#section2" class="back-button">Back</a>                                                        
+                        </div>
+                    </div>
+                    
+                </div>                
+            </div>
+        </section>
+    
+        <section id="section5" class="section">
+            <div class="section-content">
+                <h2>Section 2</h2>
+                <p>Here's the second section with different content.</p>
+                <div class="navigation-buttons">
+                    <a href="#section1" class="section-button">Back</a>
+                    <a href="#section3" class="section-button">Next</a>
+                </div>
+            </div>
+        </section>
+    
+        <section id="section4" class="section">
+            <div class="section-content">
+                <h2>Section 3</h2>
+                <p>And this is the third section of your website.</p>
+                <div class="navigation-buttons">
+                    <a href="#section2" class="section-button">Back</a>
+                    
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        const timestampLinks = document.querySelectorAll('.timestamp');
+        const pauseLinks = document.querySelectorAll('.back-button');
+        const nextLinks = document.querySelectorAll('.next-button');
+              
+
+        pauseLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+               // e.preventDefault(); // Prevent the link from navigating
+                const videoId = link.getAttribute('data-video');
+                const video = document.querySelector(`.${videoId}`);
+                video.pause();
+            });
+        });
+
+        nextLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+               // e.preventDefault(); // Prevent the link from navigating
+                const videoId = link.getAttribute('data-video');
+                const video = document.querySelector(`.${videoId}`);
+                video.pause();
+                
+            });
+        });
+
+        timestampLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault(); // Prevent the link from navigating
+                const videoId = link.getAttribute('data-video');
+                const video = document.querySelector(`.${videoId}`);
+                const timestamp = parseInt(link.getAttribute('data-timestamp'));
+                video.currentTime = timestamp;
+                video.play();
+            });
+        });
+
+
+
+    </script>
+</body>
+</html>

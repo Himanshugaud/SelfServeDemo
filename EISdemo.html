@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Your Website Name</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+        .sections-container {
+            width: 300%;
+            height: 100vh;
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+        .section {
+            width: 33.33%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: #f7f7f7;
+        }
+        .section:nth-child(even) {
+            background-color: #fff;
+        }
+        .section-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .section1-content {
+            display:flex;
+            position: relative;
+            height: 100vh;
+            width: 100%;
+            text-align: center;
+            background-color: rgb(255, 255, 255);
+            flex-direction: column;
+            align-items: center;
+            padding: 0px;
+            margin-top: 0px;
+            color:#f7f5f5;
+        }
+        .section1-container {
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            font-size: 150%;
+            color: #0a0a0a;
+            background-color: rgb(228, 228, 228);
+            height: 100%;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 1vw;
+        }
+        .section1-container-video {
+            display: flex;
+            flex-direction:column;
+            width:70%;
+            height: 80%;           
+            padding: 1.5vw;
+            margin:10px;
+                      
+        }
+        .section1-container-text {
+            display: flex;
+            flex-direction:column;
+            width:70%;
+            height: 82%;
+            
+            padding: 1.5vw;
+            justify-content: left;
+            align-items: left;
+            text-align: left;
+            
+        }
+        .section1-container-text-description {
+            height: 95%;
+        }
+        .section1-title {
+            display: flex;
+            position: relative;
+            font-size: 250%;
+            font-weight: bold;
+            color: #000000;
+            background-color: rgb(255, 255, 255);
+            height: 25px;
+            width: 100%;
+            margin-top: 2%;            
+            padding-left: 5%;
+            justify-content: left;
+            align-items: center;
+            text-align: left;
+        }
+        .section1-title-line {
+            position: relative;
+            background-color: rgb(132, 132, 132);
+            height: 5px;
+            width: 100%;
+            margin: 1%;
+            
+        }
+        .navigation-buttons {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: right;
+        }
+        .section1-buttons{
+            display: flex;
+            flex-direction: row;
+            width:95%;            
+            justify-content: space-between;
+            align-items: right;
+            text-align: center;
+        }
+        .next-button {
+            padding: 10px 10px;            
+            background-color: #2036f7;
+            color: #fff;
+            width: 20%;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 0 0px;
+            font-weight: bold;
+            transition: background-color 0.3s ease
+        }
+        .next-button:hover {
+            background-color: #4aa5de; /* Changing color on hover */
+        }
+        .back-button {
+            padding: 10px 10px;            
+            background-color: #2036f7;
+            color: #fff;
+            width: 20%;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 0;
+            font-weight: bold;
+            transition: background-color 0.3s ease
+        }
+        .back-button:hover {
+            background-color: #4aa5de; /* Changing color on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="sections-container">
+        <section id="section1" class="section">
+            <div class="section1-content">
+
+                <div class="section1-title">
+                    EIS Integration
+                </div> 
+                <div class="section1-title-line">                  
+                </div>
+                <div class="section1-container">
+                    <div class="section1-container-video">
+                        <video autoplay unmuted controls>
+                            <source src="assets/EIS_Integration.mp4" type="video/mp4"> <!-- Your video file -->
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="section1-container-text">
+                        <div class="section1-container-text-description">
+                            <h2>EIS Integration</h2>
+                           1. Enterprise Integration Service is a centralized event broker system.  <br>  
+                           2. Facilitates, mediates and enriches the interactions of event producers and consumers in a publish- subscribe pattern by avoiding point-point integration.
+                            Step1.                          
+                        </div>
+
+                        <div class="section1-buttons">
+                            <a href="!DOCTYPE.html#section4" class="back-button">Back</a>
+                            <a href="#section2" class="next-button">Next</a>                            
+                        </div>
+                    </div>
+                    
+                </div>                
+            </div>
+        </section>
+
+        <section id="section2" class="section">
+            <div class="section1-content">
+
+                <div class="section1-title">
+                    EIS Integration
+                </div> 
+                <div class="section1-title-line">                  
+                </div>
+                <div class="section1-container">
+                    <div class="section1-container-video">
+                        <video autoplay loop muted>
+                            <source src="msbackground.mp4" type="video/mp4"> <!-- Your video file -->
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="section1-container-text">
+                        <div class="section1-container-text-description">
+                            <h2>EIS Integration</h2>
+                            Pull Model - Built using the Event Hub at its core with additional microservices, storage and cosmos as metadata to facilitate the subscribers to consume the events at their own pace and convenience.  <br>
+  Push Model - Built keeping Azure Event Grid at its core, with additional microservices to consume/deliver events, Storage to archive/replay events, and Cosmos as metadata store.                         
+                        </div>
+
+                        <div class="section1-buttons">
+                            <a href="#section1" class="back-button">Back</a>
+                            <a href="#section3" class="next-button">Next</a>                            
+                        </div>
+                    </div>
+                    
+                </div>                
+            </div>
+        </section>
+        <section id="section3" class="section">
+            <div class="section1-content">
+
+                <div class="section1-title">
+                    EIS Integration
+                </div> 
+                <div class="section1-title-line">                  
+                </div>
+                <div class="section1-container">
+                    <div class="section1-container-video">
+                        <video autoplay loop muted>
+                            <source src="msbackground.mp4" type="video/mp4"> <!-- Your video file -->
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="section1-container-text">
+                        <div class="section1-container-text-description">
+                            <h2>EIS Integration</h2>
+                            About EIS Integration <br>
+                            Step3.                           
+                        </div>
+
+                        <div class="section1-buttons">
+                            <a href="#section2" class="back-button">Back</a>                                                        
+                        </div>
+                    </div>
+                    
+                </div>                
+            </div>
+        </section>
+    
+        <section id="section5" class="section">
+            <div class="section-content">
+                <h2>Section 2</h2>
+                <p>Here's the second section with different content.</p>
+                <div class="navigation-buttons">
+                    <a href="#section1" class="section-button">Back</a>
+                    <a href="#section3" class="section-button">Next</a>
+                </div>
+            </div>
+        </section>
+    
+        <section id="section4" class="section">
+            <div class="section-content">
+                <h2>Section 3</h2>
+                <p>And this is the third section of your website.</p>
+                <div class="navigation-buttons">
+                    <a href="#section2" class="section-button">Back</a>
+                    
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        
+    </script>
+</body>
+</html>
