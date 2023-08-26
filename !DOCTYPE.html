@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Your Website Name</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        section {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #3336ff;
+            text-align: center;
+        }
+        
+        h2 {
+            font-size: 2rem;
+            color: #333;
+        }
+        p {
+            font-size: 1rem;
+            color: #666;
+        }
+        section#section1 {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            align-items: center;
+            overflow: hidden;
+        }
+        section#section2 {
+            position: relative;
+            height: 25vh;
+            display: flex;
+            justify-content: center;
+            background-color: #fefcfc;
+            align-items: center;
+            overflow: hidden;
+        }
+        section#section3 {
+            position: relative;
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            background-color: #fefcfc;
+            align-items: center;
+            overflow: hidden;
+        }
+        section#section4 {
+            position: relative;
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            background-color: #fefcfc;
+            align-items: center;
+            overflow: hidden;
+        }
+        .section1-title {
+            display: flex;
+            position: relative;
+            font-size: 150%;
+            color: #ffffff;
+            background-color: rgb(43, 44, 44);
+            height: 25px;
+            width: 100%;
+            margin: 0;
+            padding: 1vh;
+            padding-left: 3%;
+            justify-content: left;
+            align-items: center;
+            text-align: left;
+        }
+        .section1-title-demo {
+            display: flex;
+            position: relative;
+            font-size: 250%;
+            font-weight: bold;
+            color: #f7f5f5;
+            height: 25px;
+            width: 100%;
+            margin: 4%;
+            padding: 1vh;
+            padding-left: 10%;
+            justify-content: left;
+            align-items: center;
+            text-align: left;
+        }
+        .section1-center {
+            display: flex;
+            position: relative;
+            font-size: 5vw;
+            color: #ffffff;
+            height: 10%;
+            width: 80%;
+            margin-top: 7%;
+            padding: 1vh;
+            padding-left: 10px;
+            text-align: center;
+            align-items: center;
+            font-weight: bold;
+            justify-content: center;
+            
+        }
+        .section1-choosedemo {
+            margin-top: 5%;
+            font-size: 1.5vw;
+            font-weight: bold;
+            color: white;
+            
+        }
+        .section1-buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            position: relative;
+            color: #333;
+            height: 10%;
+            width: 80%;
+            margin-top: 0.5%;
+            padding: 1vh;
+            padding-left: 10px;
+            text-align: center;
+            align-items: center;
+            font-size: 2vw;
+        }
+        .section1-button {
+            padding: 10px 20px;
+            background-color: #fbc335;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 0 10px;
+            font-weight: bold;
+            transition: background-color 0.3s ease
+        }        
+        .section1-button:hover {
+            background-color: #c1f409; /* Changing color on hover */
+        }
+        .section3-button {
+            padding: 10px 10px;
+            background-color: #2036f7;
+            color: #fff;
+            width: 25%;
+            text-decoration: none;
+            font-size: smaller;
+            border-radius: 5px;
+            margin: 0 0px;
+            font-weight: bold;
+            transition: background-color 0.3s ease
+        }
+        .section3-button:hover {
+            background-color: #4aa5de; /* Changing color on hover */
+        }
+        .section1-content {
+            display:flex;
+            position: relative;
+            height: 100vh;
+            width: 100%;
+            z-index: 1;
+            text-align: center;
+            background-color: rgb(255, 255, 255);
+            flex-direction: column;
+            align-items: center;
+            padding: 0px;
+            margin-top: 0px;
+            color:#f7f5f5;
+        }
+        .section2-content {
+            display:flex;
+            position: relative;
+            height: 100vh;
+            width: 100%;
+            z-index: 1;
+            text-align: center;
+            background-color: rgb(220, 220, 220);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10%;
+            margin-top: 5%;
+        }
+        .section2-para {
+            display: flex;
+            position: relative;
+            font-size: 1.8vw;
+            color: #000000;
+            height: 10%;
+            width: 65%;
+            padding: 1vh;
+            padding-left: 10px;
+            text-align: center;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            font-style: normal;
+        }
+        .section3-content {
+            display:flex;
+            position: relative;
+            height: 100vh;
+            width: 100%;
+            z-index: 1;
+            text-align: center;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            flex-direction:row;
+            align-items: center;
+            padding: 0px;
+            margin-top: 0px;
+        }
+
+        .section3-img {
+            display: flex;
+            position: relative;
+            font-size: 1.5vw;
+            color: #000000;            
+            height: 90%;
+            width: 100%;
+            padding-left: 10px;
+            text-align: center;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            font-style: normal;
+        }
+        .section3-txt {
+            display: flex;
+            position: relative;
+            font-size: 1.5vw;
+            color: #020202;
+            height: 75%;
+            width: 50%;
+            padding-left: 3%;
+            text-align: left;
+            align-items: left;
+            flex-direction: column;
+            justify-content: left;
+        }
+        .section3-txt-para {
+            display: flex;
+            position: relative;
+            font-size: 1.5vw;
+            font-family: 'Georgia', serif;
+            height: 60%;
+            width: 70%;
+            color: #6c6a6a;
+            text-align: left;
+            align-items: left;
+            flex-direction: column;
+            justify-content: left;
+        }
+        .section4-content {
+            display:flex;
+            position: relative;
+            height: 100vh;
+            width: 100%;
+            z-index: 1;
+            text-align: center;
+            background-color: rgb(236, 232, 232);
+            display: flex;
+            flex-direction:row;
+            align-items: center;
+            padding: 0px;
+            margin-top: 0px;
+        }
+        .section4-img {
+            display: flex;
+            position: relative;
+            font-size: 1.5vw;
+            color: #000000; 
+            padding-right: 0px;
+            text-align: center;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            font-style: normal;
+            margin: 2%;
+        }
+        .section4-txt {
+            display: flex;
+            position: relative;
+            font-size: 1.5vw;
+            color: #020202;  
+            height: 75%;
+            width: 70%;          
+            padding-left: 3%;
+            text-align: left;
+            align-items: right;
+            flex-direction: column;
+            justify-content: right;
+        }
+        .section4-txt-para {
+            display: flex;
+            position: relative;
+            font-size: 1.5vw;
+            height: 60%;
+            width: 70%;
+            color: #6c6a6a;
+            text-align: left;
+            align-items: left;
+            flex-direction: column;
+            justify-content: left;
+        }
+        .navigation-buttons {
+            display: flex;
+            justify-content: space-between;
+            align-items: left;
+        }
+        
+        section#section1 video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <section id="section1"> 
+               
+        <div class="section1-content">
+            <video autoplay loop muted>
+                <source src="assets/msbackground1.mp4" type="video/mp4"> <!-- Your video file -->
+                Your browser does not support the video tag.
+            </video>
+                     
+            <div class="section1-title-demo">
+                
+            </div> 
+            <div class="section1-center">
+                Self-Serve Portal
+            </div>            
+            <div class="section1-choosedemo">Choose a demo</div>
+            <div class="section1-buttons">
+                <a href="#section3" class="section1-button">EDI Integration</a>
+                <a href="#section5" class="section1-button">EIS Integration</a>
+                <a href="#section4" class="section1-button">API Integration</a>
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="section2">
+        <div class="section2-content">            
+            <div class="section2-para">
+                <h1>Self-Serve Portal</h1>
+                <div style="font-family: Georgia, serif;">Enable Partners to onboard themselves by Self-Serve mode in a cost-effective and efficient manner with best digital experience 
+                    
+                </div>
+            </div>
+        </div>        
+    </section>
+
+    <section id="section3">
+        <div class="section3-content">            
+            <div class="section3-img">
+                <img style="width: 100%; height: 82%;"src="assets/EDI_Integration.png" alt="API Integration image">
+            </div>
+            <div class="section3-txt">
+                <h2>EDI Integration</h2>
+                <div class="section3-txt-para">
+                    Self serve portal home page helps to identify the existing Partner setups such as transactions onboarde, AS2,EDI codes, Certificate used etc... for easy verification.This page drive to specific actions such as new EDI onboardings, Certificate change,changes in the exisitng details, Microsoft Certificate download etc..
+                </div>
+                <h5>Click on the demo below to learn more</h5>                
+                <div class="navigation-buttons">
+                    <a href="EDIdemo.html#section1" class="section3-button">EDI Onboarding</a>
+                    <a href="EDIdemo.html#section2" class="section3-button">Approval Experience</a>
+                    <a href="EDIdemo.html#section3" class="section3-button">E2E Testing</a>
+                </div>
+            </div>     
+
+        </div> 
+    </section>
+
+    <section id="section5">
+        <div class="section4-content">            
+            
+            <div class="section3-txt">
+                <h2>EIS Integration</h2>
+                <div class="section3-txt-para">
+                    Self serve portal home page helps to identify the existing Partner setups such as transactions onboarde, AS2,EDI codes, Certificate used etc... for easy verification.This page drive to specific actions such as new EDI onboardings, Certificate change,changes in the exisitng details, Microsoft Certificate download etc..
+                </div>
+                <h5>Click on the demo below to learn more</h5>
+                <a href="EISdemo.html" class="section3-button">Start demo</a>
+            </div>  
+            <div class="section4-img">
+                <img src="assets/Certificates.png" alt="API Integration image" width = "850" height = "500">
+            </div>   
+
+        </div> 
+    </section>
+
+    <section id="section4">
+        <div class="section3-content">            
+            <div class="section3-img">
+                <img src="assets/apiintegeration.jpg" alt="API Integration image">
+            </div> 
+            <div class="section3-txt">
+                <h2>API Integration</h2>
+                <div class="section3-txt-para">
+                    Self serve portal home page helps to identify the existing Partner setups such as transactions onboarde, AS2,EDI codes, Certificate used etc... for easy verification.This page drive to specific actions such as new EDI onboardings, Certificate change,changes in the exisitng details, Microsoft Certificate download etc..
+                </div>
+                <h5>Click on the demo below to learn more</h5>
+                <a href="APIdemo.html" class="section3-button">Start demo</a>
+            </div>  
+              
+
+        </div> 
+    </section>
+    
+    
+
+    <!-- Add more sections as needed -->
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
